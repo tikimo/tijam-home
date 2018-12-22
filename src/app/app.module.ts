@@ -6,6 +6,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MglTimelineModule} from 'angular-mgl-timeline';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import {RouterModule} from '@angular/router';
+import {ROUTES} from './app.routes';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
+    RouterModule.forRoot(ROUTES),
     BrowserModule,
     BrowserAnimationsModule,
     MglTimelineModule,
