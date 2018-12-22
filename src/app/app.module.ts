@@ -4,16 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MglTimelineModule} from 'angular-mgl-timeline';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
 import {RouterModule} from '@angular/router';
 import {ROUTES} from './app.routes';
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    TimelineComponent,
+    NavbarComponent
   ],
   imports: [
     RouterModule.forRoot(ROUTES),
