@@ -17,6 +17,7 @@
   height: 100px;
   width: 100%;
   background-color: white;
+  color: dimgrey;
 
   display: flex;
   justify-content: space-between;
@@ -64,3 +65,18 @@
   align-items: center;
 }
 
+
+.right-section {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.social-profile-link{
+  margin-left: 10px;
+}
+.mat-button{
+  font-size: larger;
+}
+.mat-icon{
+  margin: 0 20px 5px 10px;
+}

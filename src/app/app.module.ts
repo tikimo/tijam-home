@@ -10,7 +10,8 @@ import {RouterModule} from '@angular/router';
 import {ROUTES} from './app.routes';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import {MatButtonModule} from '@angular/material';
+import {MatButtonModule, MatIconModule} from '@angular/material';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import {MatButtonModule} from '@angular/material';
     BrowserModule,
     BrowserAnimationsModule,
     MglTimelineModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

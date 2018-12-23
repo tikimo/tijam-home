@@ -5,9 +5,14 @@
 
     </div>
     <div class="right-section">
-      <button mat-button class="social-profile-link">
-        <mat-icon></mat-icon>
-      </button>
+      <a *ngFor="let socialButton of socialButtons" href="{{socialButton.url}}" target="_blank">
+        <button mat-button class="social-profile-link">
+          <mat-icon svgIcon="{{socialButton.identifier}}"></mat-icon>
+          <span class="mat-button-header-text">
+          {{socialButton.name}}
+        </span>
+        </button>
+      </a>
     </div>
   </div>
 
