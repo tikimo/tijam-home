@@ -1,9 +1,9 @@
-@import "~compass-mixins/lib/compass";
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 
 .navbar-container {
   width: 100%;
   height: 70vh;
-  background-color: #575757;
+  background-color: white;
 
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 .navbar-header {
   height: 100px;
   width: 100%;
-  background-color: #454545;
+  background-color: white;
 }
 
 .navbar-middle-section {
@@ -24,17 +24,39 @@
   width: 100%;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.navbar-title-container{
-  background-color: #575757;
+.navbar-third-panel{
+  background-color: white;
 
   width: 100%;
+  height: auto;
+
+  padding: 50px;
+
+  
+  /* Font-specific settings below */
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  color: dimgrey;
+  font-size: 42px;
+  font-family: 'Monoton', cursive;
+  word-spacing: 20px;
 }
 
 .navbar-image-container{
-  background-color: red;
+  background: url("../../../assets/mmselfie.png") no-repeat 50% 50%;
+  background-size: contain;
 
+  height: 100%;
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
