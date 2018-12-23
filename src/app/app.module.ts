@@ -10,6 +10,7 @@ import {RouterModule} from '@angular/router';
 import {ROUTES} from './app.routes';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import {MatButtonModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     BrowserModule,
     BrowserAnimationsModule,
     MglTimelineModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
