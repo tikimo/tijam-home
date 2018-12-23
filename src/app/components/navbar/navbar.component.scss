@@ -1,0 +1,40 @@
+@import "~compass-mixins/lib/compass";
+
+.navbar-container {
+  width: 100%;
+  height: 70vh;
+  background-color: #575757;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* Font default color */
+  color: whitesmoke;
+}
+
+.navbar-header {
+  height: 100px;
+  width: 100%;
+  background-color: #454545;
+}
+
+.navbar-middle-section {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-title-container{
+  background-color: #575757;
+
+  width: 100%;
+}
+
+.navbar-image-container{
+  background-color: red;
+
+  width: 100%;
+}
