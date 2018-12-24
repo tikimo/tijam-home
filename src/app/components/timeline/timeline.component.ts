@@ -12,14 +12,26 @@ export class TimelineComponent implements OnInit {
   size: number = 40;
   expandEnabled: boolean = true;
 
-  entries = [
+  entries: {header: string, content: string, year: number}[] = [
     {
-      header: 'header',
-      content: 'content'
+      header: 'Roses are red',
+      content: 'content',
+      year: 2018
     },
     {
-      header: 'another header',
-      content: 'more content'
+      header: 'Violets are blue',
+      content: 'more content',
+      year: 2017
+    },
+    {
+      header: 'This site is still in development',
+      content: 'more content',
+      year: 2016
+    },
+    {
+      header: 'But so are you',
+      content: 'more content',
+      year: 2015
     }
   ];
 
