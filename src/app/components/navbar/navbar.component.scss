@@ -81,3 +81,33 @@
 .mat-icon{
   margin: 0 20px 5px 10px;
 }
+
+
+
+
+/*
+Mobile settings.
+Unlike standard 768, we use 800px width in order to work around header image issues
+*/
+
+@media only screen and (max-width: 1500px) { // TODO 800px
+  .navbar-container{
+    height: auto;
+  }
+  .navbar-middle-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-header{
+    justify-content: center;
+  }
+  .navbar-image-container{
+    height: 50vh;
+  }
+}
+
+
+
+
+
+
