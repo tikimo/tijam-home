@@ -21,3 +21,12 @@
   border-width: 0 5px 50px 5px;
   border-color: transparent transparent #a0a0a0 transparent;
 }
+
+@media only screen and (max-width: 639px){
+  .vertical-line{
+    margin-left: 20px;
+  }
+  .triangle-up{
+    margin-left: 20px;
+  }
+}
