@@ -90,7 +90,7 @@ Mobile settings.
 Unlike standard 768, we use 800px width in order to work around header image issues
 */
 
-@media only screen and (max-width: 1500px) { // TODO 800px
+@media only screen and (max-width: 800px) {
   .navbar-container{
     height: auto;
   }
