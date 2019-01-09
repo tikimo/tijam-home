@@ -5,14 +5,9 @@
 
     </div>
     <div class="right-section">
-      <a href="https://github.com/tikimo" target="_blank">
+      <a href="{{button.url}}" target="_blank" *ngFor="let button of socialButtons">
         <button mat-button class="social-profile-link">
-          <fa-icon [icon]="['fab', 'github']"></fa-icon>
-
-        </button>
-      </a>
-      <a href="https://linkedin.com/in/tikimo" target="_blank">
-        <button mat-button class="social-profile-link">
+          <fa-icon [icon]="['fab', button.identifier]" [size]="'2x'"></fa-icon>
         </button>
       </a>
     </div>
