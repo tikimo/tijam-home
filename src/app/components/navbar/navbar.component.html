@@ -5,12 +5,14 @@
 
     </div>
     <div class="right-section">
-      <a *ngFor="let socialButton of socialButtons" href="{{socialButton.url}}" target="_blank">
+      <a href="https://github.com/tikimo" target="_blank">
         <button mat-button class="social-profile-link">
-          <mat-icon svgIcon="{{socialButton.identifier}}"></mat-icon>
-          <span class="mat-button-header-text">
-          {{socialButton.name}}
-        </span>
+          <fa-icon [icon]="['fab', 'github']"></fa-icon>
+
+        </button>
+      </a>
+      <a href="https://linkedin.com/in/tikimo" target="_blank">
+        <button mat-button class="social-profile-link">
         </button>
       </a>
     </div>

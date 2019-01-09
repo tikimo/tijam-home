@@ -13,6 +13,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {MatButtonModule, MatIconModule} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
 
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faGithub, faGooglePlay, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +33,14 @@ import {HttpClientModule} from '@angular/common/http';
     MglTimelineModule,
     MatButtonModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    library.add(faGithub, faTwitter, faGooglePlay, faLinkedin);
+  }
+}
