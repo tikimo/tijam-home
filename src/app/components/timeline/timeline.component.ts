@@ -40,8 +40,6 @@ export class TimelineComponent implements OnInit {
   }
 
   onExpandEntry(event, entry) {
-    console.log(event, entry);
-
     if (event === true) {
       this.expandedEntries.push(entry);
     }
