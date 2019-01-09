@@ -32,14 +32,23 @@ export class TimelineComponent implements OnInit {
       year: 2015
     }
   ];
+  private expandedEntries: any[] = [];
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onExpandEntry($event, i) {
+  onExpandEntry(event, entry) {
+    console.log(event, entry);
 
+    if (event === true) {
+      this.expandedEntries.push(entry);
+    }
+
+    if (event === false && this.expandedEntries.includes(entry)) {
+      this.expandedEntries.splice(this.expandedEntries.indexOf(entry), 1);
+    }
   }
 
   onHeaderClick($event) {
