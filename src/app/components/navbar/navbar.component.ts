@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   constructor() {
     this.socialButtons = [
       {name: 'GitHub', identifier: 'github', url: 'https://github.com/tikimo'},
-      {name: 'Linkedin', identifier: 'linkedin', url: 'https://linkedin.com/in/tikimo'}
+      {name: 'Linkedin', identifier: 'linkedin', url: '#'}
     ];
   }
 
